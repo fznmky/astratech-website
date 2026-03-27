@@ -178,16 +178,12 @@ p {
     }
 }
 
-/* --- NEW: Hide Scrollbar Utility for Mobile Tabs --- */
-/* Hide scrollbar for Chrome, Safari and Opera */
+/* Hide Scrollbar Utility for Mobile Tabs */
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
+    display: none !important;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
 }
