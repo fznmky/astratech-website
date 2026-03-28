@@ -20,10 +20,11 @@
                             style="color: #c9ada7">.</span></span>
                 </div>
 
-                <div class="hidden md:flex space-x-8 items-center font-medium text-sm text-gray-600">
+                <div class="hidden lg:flex space-x-8 items-center font-medium text-sm text-gray-600">
                     <a href="#industries" data-i18n="nav_sectors" class="hover:text-gray-900 transition">Sectors We
                         Serve</a>
-                    <a href="#unlock-india" data-i18n="nav_model" class="hover:text-gray-900 transition">Our Model</a>
+                    <a href="#unlock-india" data-i18n="nav_approach" class="hover:text-gray-900 transition">Our
+                        Approach</a>
                     <a href="#capabilities" data-i18n="nav_impact" class="hover:text-gray-900 transition">Our Impact</a>
                     <a href="#security" data-i18n="nav_security" class="hover:text-gray-900 transition">Security</a>
 
@@ -34,17 +35,17 @@
                                 d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                             </path>
                         </svg>
-                        <span id="current-lang-desktop">EN</span>
+                        <span id="current-lang-desktop">DE</span>
                     </button>
 
                     <a href="#contact" data-i18n="nav_cta"
                         class="btn-primary px-6 py-3 rounded-full font-semibold transition ml-2">Contact</a>
                 </div>
 
-                <div class="md:hidden flex items-center gap-3">
+                <div class="lg:hidden flex items-center gap-3">
                     <button id="lang-switch-mobile"
                         class="flex items-center gap-1 text-xs font-bold text-gray-700 bg-gray-100 px-2 py-1 rounded">
-                        EN
+                        DE
                     </button>
                     <button id="mobile-menu-btn" class="text-gray-900 focus:outline-none p-2">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,14 +57,14 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white border-b border-gray-100 shadow-xl z-40">
+        <div id="mobile-menu" class="hidden lg:hidden absolute w-full bg-white border-b border-gray-100 shadow-xl z-40">
             <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
                 <a href="#industries" data-i18n="nav_sectors"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Sectors
                     We Serve</a>
-                <a href="#unlock-india" data-i18n="nav_model"
+                <a href="#unlock-india" data-i18n="nav_approach"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our
-                    Model</a>
+                    Approach</a>
                 <a href="#capabilities" data-i18n="nav_impact"
                     class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our
                     Impact</a>
@@ -134,10 +135,12 @@
         </div>
     </section>
 
-    <section id="industries" class="py-16 md:py-32 bg-[#f9f9fa]">
+    <section id="industries" class="py-12 md:py-20 bg-[#f9f9fa] scroll-mt-20 md:scroll-mt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 md:mb-16" data-aos="fade-up">
-                <h2 data-i18n="sectors_title" class="text-3xl md:text-4xl font-bold text-gray-900">Sectors we serve</h2>
+                <h2 data-i18n="sectors_title"
+                    class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">Sectors we serve
+                </h2>
             </div>
 
             <div class="flex overflow-x-auto no-scrollbar border-b border-gray-200 mb-8 md:mb-12 justify-start md:justify-center gap-6 md:gap-8 px-2 pb-1"
@@ -148,10 +151,10 @@
                     class="tab-btn flex-shrink-0">Electronics</button>
                 <button onclick="switchTab('packaging')" id="tab-packaging" data-i18n="tab_pack"
                     class="tab-btn flex-shrink-0">Packaging</button>
-                <button onclick="switchTab('agri')" id="tab-agri" data-i18n="tab_agri"
-                    class="tab-btn flex-shrink-0">Agriculture</button>
                 <button onclick="switchTab('hardware')" id="tab-hardware" data-i18n="tab_hard"
                     class="tab-btn flex-shrink-0">Hardware</button>
+                <button onclick="switchTab('agri')" id="tab-agri" data-i18n="tab_agri"
+                    class="tab-btn flex-shrink-0">Agriculture</button>
             </div>
 
             <div class="bg-white rounded-3xl p-6 sm:p-10 md:p-16 min-h-[400px] shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
@@ -315,12 +318,14 @@
         </div>
     </section>
 
-    <section id="unlock-india" class="py-16 md:py-32 bg-white">
+    <section id="unlock-india" class="py-12 md:py-20 bg-white scroll-mt-20 md:scroll-mt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-16" data-aos="fade-up">
                 <div class="max-w-3xl text-center md:text-left mx-auto md:mx-0">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
-                        <span data-i18n="unlock_title">Unlock India’s Untapped Manufacturing Power</span>
+                    <h2 data-i18n="unlock_title"
+                        class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+                        Unlock India’s Untapped <br class="hidden md:block"><span
+                            class="text-gray-400 font-normal">Manufacturing Power.</span>
                     </h2>
                     <p data-i18n="unlock_desc" class="text-gray-500 text-base md:text-lg leading-relaxed">
                         70% of India's best manufacturers are small-scale experts who don't export. We bridge the gap as
@@ -330,8 +335,8 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                <div class="bg-[#f9f9fa] border border-gray-200 p-8 md:p-10 rounded-2xl md:rounded-3xl transition-all hover:border-red-200 hover:shadow-sm"
-                    data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-[#f9f9fa] p-8 md:p-10 rounded-2xl md:rounded-3xl" data-aos="fade-up"
+                    data-aos-delay="100">
                     <div class="flex items-center gap-3 mb-6 md:mb-8">
                         <div class="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center">
                             <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -379,8 +384,8 @@
                     </ul>
                 </div>
 
-                <div class="frosted-gradient-card border border-[#c9ada7]/30 p-8 md:p-10 rounded-2xl md:rounded-3xl shadow-sm"
-                    data-aos="fade-up" data-aos-delay="200">
+                <div class="frosted-gradient-card p-8 md:p-10 rounded-2xl md:rounded-3xl shadow-sm" data-aos="fade-up"
+                    data-aos-delay="200">
                     <div class="flex items-center gap-3 mb-6 md:mb-8">
                         <div class="w-10 h-10 rounded-full bg-[#4a4e69]/10 flex items-center justify-center">
                             <svg class="w-5 h-5 text-[#4a4e69]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -430,35 +435,35 @@
         </div>
     </section>
 
-    <section id="capabilities" class="py-16 md:py-32 bg-[#f9f9fa]">
+    <section id="capabilities" class="py-12 md:py-20 bg-[#f9f9fa] scroll-mt-20 md:scroll-mt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-16" data-aos="fade-up">
                 <div class="max-w-2xl text-center md:text-left mx-auto md:mx-0">
                     <h2 data-i18n="impact_title"
-                        class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">Delivering
+                        class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">Delivering
                         measurable impact <br class="hidden md:block"><span class="text-gray-400 font-normal">across the
                             supply chain.</span></h2>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-                <div class="frosted-gradient-card p-8 md:p-10 rounded-2xl md:rounded-3xl" data-aos="fade-up"
-                    data-aos-delay="100">
+                <div class="frosted-gradient-card transition-transform duration-500 hover:-translate-y-2 p-8 md:p-10 rounded-2xl md:rounded-3xl"
+                    data-aos="fade-up" data-aos-delay="100">
                     <h3 data-i18n="imp1_title" class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-900">Cost
                         Optimization</h3>
                     <p data-i18n="imp1_desc" class="text-gray-800 text-sm md:text-base leading-relaxed mb-0">By auditing
                         top Tier-1 and hidden SME manufacturers across India, we negotiate transparent, open-book
                         pricing that directly protects your margins.</p>
                 </div>
-                <div class="frosted-gradient-card p-8 md:p-10 rounded-2xl md:rounded-3xl" data-aos="fade-up"
-                    data-aos-delay="200">
+                <div class="frosted-gradient-card transition-transform duration-500 hover:-translate-y-2 p-8 md:p-10 rounded-2xl md:rounded-3xl"
+                    data-aos="fade-up" data-aos-delay="200">
                     <h3 data-i18n="imp2_title" class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-900">Risk
                         Mitigation</h3>
                     <p data-i18n="imp2_desc" class="text-gray-800 text-sm md:text-base leading-relaxed mb-0">Our
                         deployed engineers conduct strict IQC and Pre-Shipment Inspections on the factory floor,
                         verifying absolute compliance before shipping.</p>
                 </div>
-                <div class="frosted-gradient-card p-8 md:p-10 rounded-2xl md:rounded-3xl sm:col-span-2 md:col-span-1"
+                <div class="frosted-gradient-card transition-transform duration-500 hover:-translate-y-2 p-8 md:p-10 rounded-2xl md:rounded-3xl sm:col-span-2 md:col-span-1"
                     data-aos="fade-up" data-aos-delay="300">
                     <h3 data-i18n="imp3_title" class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-900">Seamless
                         Delivery</h3>
@@ -470,7 +475,7 @@
         </div>
     </section>
 
-    <section id="security" class="py-12 md:py-16 bg-[#111827] border-y border-[#22223b]">
+    <section id="security" class="py-12 md:py-16 bg-[#111827] border-y border-[#22223b] scroll-mt-20 md:scroll-mt-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
                 class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 divide-y md:divide-y-0 md:divide-x divide-[#22223b]">
@@ -482,7 +487,7 @@
                             d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
                         </path>
                     </svg>
-                    <h4 data-i18n="trust1_title" class="text-lg font-bold text-white mb-2">Ironclad Non-Disclosure</h4>
+                    <h4 data-i18n="trust1_title" class="text-lg font-bold text-white mb-2">Secure File Exchange</h4>
                     <p data-i18n="trust1_desc" class="text-gray-400 text-sm leading-relaxed">Your CAD files and
                         technical data are legally protected before a single conversation begins.</p>
                 </div>
@@ -515,11 +520,12 @@
         </div>
     </section>
 
-    <section id="contact" class="py-16 md:py-32 bg-white">
+    <section id="contact" class="py-12 md:py-20 bg-white scroll-mt-20 md:scroll-mt-24">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 md:mb-16" data-aos="fade-up">
-                <h2 data-i18n="contact_title" class="text-3xl md:text-4xl font-bold text-gray-900">Request a Feasibility
-                    Study</h2>
+                <h2 data-i18n="contact_title"
+                    class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">Request a
+                    Feasibility Study</h2>
                 <p data-i18n="contact_desc" class="text-gray-500 mt-4 text-base md:text-lg">Submit your requirements.
                     Our engineering team will assess feasibility and costs.</p>
             </div>
@@ -585,15 +591,15 @@
                     <div class="text-2xl font-bold tracking-tight mb-4 text-white">Astratech Solutions<span
                             style="color: var(--color-accent-subtle)">.</span></div>
                     <p data-i18n="footer_desc" class="text-gray-400 text-sm mb-6 max-w-xs mx-auto sm:mx-0">Your
-                        Strategic Procurement Partner in India. Modern supply chain expertise.</p>
+                        Strategic Procurement Partner in India. Global Supply Chain Expertise.</p>
                 </div>
                 <div>
                     <h5 data-i18n="foot_nav" class="font-semibold mb-4 text-[#c9ada7]">Navigation</h5>
                     <ul class="space-y-3 text-sm text-gray-400">
                         <li><a href="#industries" data-i18n="nav_sectors" class="hover:text-white transition">Sectors We
                                 Serve</a></li>
-                        <li><a href="#unlock-india" data-i18n="nav_model" class="hover:text-white transition">Our
-                                Model</a></li>
+                        <li><a href="#unlock-india" data-i18n="nav_approach" class="hover:text-white transition">Our
+                                Approach</a></li>
                         <li><a href="#capabilities" data-i18n="nav_impact" class="hover:text-white transition">Our
                                 Impact</a></li>
                         <li><a href="#security" data-i18n="nav_security"

@@ -6,62 +6,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Astratech Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="antialiased selection:bg-[#c9ada7] selection:text-[#22223b] bg-[#f9f9fa]">
 
-    <nav class="border-b border-gray-100 bg-white sticky top-0 z-50">
+    <nav class="border-b border-gray-100 bg-white sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-24 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="text-2xl font-bold tracking-tight text-gray-900">Astratech
-                        Solutions<span style="color: var(--color-primary)">.</span></a>
+            <div class="flex justify-between h-20 md:h-24 items-center">
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <a href="index.html" class="text-xl md:text-2xl font-bold tracking-tight text-gray-900">Astratech
+                        Solutions<span style="color: #c9ada7">.</span></a>
                 </div>
-                <div class="hidden md:flex space-x-8 items-center font-medium text-sm text-gray-600">
-                    <a href="index.html" class="hover:text-gray-900 transition flex items-center gap-1"><svg
-                            class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                <div class="hidden lg:flex space-x-8 items-center font-medium text-sm text-gray-600">
+                    <a href="index.html#industries" data-i18n="nav_sectors"
+                        class="hover:text-gray-900 transition">Sectors We Serve</a>
+                    <a href="index.html#unlock-india" data-i18n="nav_approach"
+                        class="hover:text-gray-900 transition">Our Approach</a>
+                    <a href="index.html#capabilities" data-i18n="nav_impact" class="hover:text-gray-900 transition">Our
+                        Impact</a>
+                    <a href="index.html#security" data-i18n="nav_security"
+                        class="hover:text-gray-900 transition">Security</a>
+
+                    <button id="lang-switch-desktop"
+                        class="flex items-center gap-1.5 text-sm font-semibold text-gray-600 hover:text-[#4a4e69] transition ml-2 px-3 py-1.5 rounded-md hover:bg-gray-50 border border-transparent hover:border-gray-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                        </svg> Back to Home</a>
+                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                        <span id="current-lang-desktop">DE</span>
+                    </button>
+
+                    <a href="index.html#contact" data-i18n="nav_cta"
+                        class="btn-primary px-6 py-3 rounded-full font-semibold transition ml-2">Contact</a>
                 </div>
+
+                <div class="lg:hidden flex items-center gap-3">
+                    <button id="lang-switch-mobile"
+                        class="flex items-center gap-1 text-xs font-bold text-gray-700 bg-gray-100 px-2 py-1 rounded">
+                        DE
+                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-900 focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden absolute w-full bg-white border-b border-gray-100 shadow-xl z-40">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+                <a href="index.html#industries" data-i18n="nav_sectors"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Sectors
+                    We Serve</a>
+                <a href="index.html#unlock-india" data-i18n="nav_approach"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our
+                    Approach</a>
+                <a href="index.html#capabilities" data-i18n="nav_impact"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our
+                    Impact</a>
+                <a href="index.html#security" data-i18n="nav_security"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Security</a>
+                <a href="index.html#contact" data-i18n="nav_cta"
+                    class="block px-3 py-3 mt-4 text-center btn-primary rounded-full font-semibold">Contact</a>
             </div>
         </div>
     </nav>
 
     <section class="py-20">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-white p-12 rounded-3xl border border-gray-100 shadow-sm">
-            <h1 class="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
-            <p class="text-sm text-gray-500 mb-8">Last Updated: March 2026</p>
+        <div
+            class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white p-8 md:p-16 rounded-3xl border border-gray-100 shadow-sm">
+            <h1 data-i18n="priv_title" class="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
+            <p data-i18n="priv_date" class="text-sm text-gray-500 mb-12 uppercase tracking-wide font-semibold">Last
+                Updated: March 2026</p>
 
-            <div class="space-y-8 text-gray-600 leading-relaxed">
+            <div class="space-y-10 text-gray-600 leading-relaxed text-lg">
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">1. Information We Collect</h3>
-                    <p>Astratech Solutions collects professional information necessary to facilitate
-                        business-to-business procurement services. This includes corporate contact details, engineering
-                        schematics, and supply chain requirements voluntarily submitted through our portal.</p>
+                    <h3 data-i18n="priv_h1" class="text-2xl font-bold text-gray-900 mb-4">1. Scope and Introduction</h3>
+                    <p data-i18n="priv_p1">Astratech Solutions ("we," "our," or "us") operates as a global procurement
+                        and sourcing agent. This Privacy Policy governs the collection, processing, and protection of
+                        corporate and personal data submitted through our platform or via direct business communication.
+                        We strictly adhere to the General Data Protection Regulation (GDPR) and international data
+                        protection standards.</p>
                 </div>
+
+                <hr class="border-gray-100">
+
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">2. How We Use Your Data</h3>
-                    <p>Your data is used strictly for feasibility analysis, supplier matching, and executing procurement
-                        contracts. We do not sell, rent, or lease your corporate data to third-party marketing agencies.
-                    </p>
+                    <h3 data-i18n="priv_h2" class="text-2xl font-bold text-gray-900 mb-4">2. Data Collection and Purpose
+                    </h3>
+                    <p data-i18n="priv_p2">As a B2B service provider, we collect data necessary to evaluate
+                        manufacturing feasibility and fulfill contractual obligations. This includes:</p>
+                    <ul class="list-disc pl-6 mt-4 space-y-2">
+                        <li data-i18n="priv_l2_1"><strong>Corporate Contact Details:</strong> Names, corporate emails,
+                            and business addresses.</li>
+                        <li data-i18n="priv_l2_2"><strong>Technical Specifications:</strong> CAD drawings, schematics,
+                            material tolerances, and intellectual property submitted for feasibility requests.</li>
+                        <li data-i18n="priv_l2_3"><strong>Financial Data:</strong> Tax identification numbers, billing
+                            addresses, and banking details required for escrow and international freight forwarding.
+                        </li>
+                    </ul>
                 </div>
+
+                <hr class="border-gray-100">
+
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">3. IP Protection & GDPR Compliance</h3>
-                    <p>We enforce strict data silos. Technical drawings are only shared with audited manufacturers after
-                        a mutually signed Non-Disclosure Agreement (NDA) is executed. European clients have full rights
-                        to data deletion under GDPR Article 17.</p>
+                    <h3 data-i18n="priv_h3" class="text-2xl font-bold text-gray-900 mb-4">3. Legal Basis for Processing
+                    </h3>
+                    <p data-i18n="priv_p3">Under GDPR Article 6, we process your data strictly under the following legal
+                        bases: (a) Performance of a contract (processing Request for Quotations and managing supply
+                        chains), and (b) Legitimate interests (ensuring fraud prevention and improving our B2B
+                        services).</p>
+                </div>
+
+                <hr class="border-gray-100">
+
+                <div>
+                    <h3 data-i18n="priv_h4" class="text-2xl font-bold text-gray-900 mb-4">4. Data Sharing and
+                        International Transfers</h3>
+                    <p data-i18n="priv_p4">Astratech Solutions operates heavily within India's manufacturing sector.
+                        Therefore, technical data and specifications are transferred to our audited supplier network.
+                        <strong>We mitigate all international transfer risks through:</strong></p>
+                    <ul class="list-disc pl-6 mt-4 space-y-2">
+                        <li data-i18n="priv_l4_1"><strong>Pre-Signed NDAs:</strong> No technical files are shared with
+                            manufacturing partners without a mutually executed Non-Disclosure Agreement.</li>
+                        <li data-i18n="priv_l4_2"><strong>Standard Contractual Clauses (SCCs):</strong> All data
+                            transferred outside of the European Economic Area (EEA) is protected by legally binding
+                            mechanisms ensuring GDPR-equivalent security.</li>
+                    </ul>
+                </div>
+
+                <hr class="border-gray-100">
+
+                <div>
+                    <h3 data-i18n="priv_h5" class="text-2xl font-bold text-gray-900 mb-4">5. User Rights (GDPR)</h3>
+                    <p data-i18n="priv_p5">European residents and corporate entities have the right to request access
+                        to, rectification of, or erasure of their data ("Right to be Forgotten" - Article 17). You may
+                        also request data portability or object to specific processing methods by contacting our
+                        compliance team directly.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#111827] py-16 text-white border-t border-[#22223b]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-gray-500">
-            <p>© 2026 Astratech Solutions. All rights reserved.</p>
+    <footer class="bg-[#111827] py-12 md:py-16 text-white border-t border-[#22223b]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 text-center sm:text-left">
+                <div class="sm:col-span-2 md:col-span-1">
+                    <div class="text-2xl font-bold tracking-tight mb-4 text-white">Astratech Solutions<span
+                            style="color: var(--color-accent-subtle)">.</span></div>
+                    <p data-i18n="footer_desc" class="text-gray-400 text-sm mb-6 max-w-xs mx-auto sm:mx-0">Your
+                        Strategic Procurement Partner in India. Global Supply Chain Expertise.</p>
+                </div>
+                <div>
+                    <h5 data-i18n="foot_nav" class="font-semibold mb-4 text-[#c9ada7]">Navigation</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="index.html#industries" data-i18n="nav_sectors"
+                                class="hover:text-white transition">Sectors We Serve</a></li>
+                        <li><a href="index.html#unlock-india" data-i18n="nav_approach"
+                                class="hover:text-white transition">Our Approach</a></li>
+                        <li><a href="index.html#capabilities" data-i18n="nav_impact"
+                                class="hover:text-white transition">Our Impact</a></li>
+                        <li><a href="index.html#security" data-i18n="nav_security"
+                                class="hover:text-white transition">Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 data-i18n="foot_legal" class="font-semibold mb-4 text-[#c9ada7]">Legal</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="privacy.html" data-i18n="foot_priv" class="hover:text-white transition">Privacy
+                                Policy</a></li>
+                        <li><a href="terms.html" data-i18n="foot_terms" class="hover:text-white transition">Terms &
+                                Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 data-i18n="foot_comp" class="font-semibold mb-4 text-[#c9ada7]">Compliance</h5>
+                    <ul class="space-y-3 text-sm text-gray-400 flex flex-col items-center sm:items-start">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg> <span data-i18n="foot_gdpr">GDPR Ready</span></li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                </path>
+                            </svg> <span data-i18n="foot_ip">IP Safe</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-[#22223b] mt-10 md:mt-12 pt-8 text-center text-xs text-gray-500">
+                <p data-i18n="foot_rights">© 2026 Astratech Solutions. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

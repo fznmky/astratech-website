@@ -6,61 +6,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms & Conditions | Astratech Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="antialiased selection:bg-[#c9ada7] selection:text-[#22223b] bg-[#f9f9fa]">
 
-    <nav class="border-b border-gray-100 bg-white sticky top-0 z-50">
+    <nav class="border-b border-gray-100 bg-white sticky top-0 z-50 bg-opacity-95 backdrop-blur-sm relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-24 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="text-2xl font-bold tracking-tight text-gray-900">Astratech
-                        Solutions<span style="color: var(--color-primary)">.</span></a>
+            <div class="flex justify-between h-20 md:h-24 items-center">
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <a href="index.html" class="text-xl md:text-2xl font-bold tracking-tight text-gray-900">Astratech
+                        Solutions<span style="color: #c9ada7">.</span></a>
                 </div>
-                <div class="hidden md:flex space-x-8 items-center font-medium text-sm text-gray-600">
-                    <a href="index.html" class="hover:text-gray-900 transition flex items-center gap-1"><svg
-                            class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                <div class="hidden lg:flex space-x-8 items-center font-medium text-sm text-gray-600">
+                    <a href="index.html#industries" data-i18n="nav_sectors"
+                        class="hover:text-gray-900 transition">Sectors We Serve</a>
+                    <a href="index.html#unlock-india" data-i18n="nav_approach"
+                        class="hover:text-gray-900 transition">Our Approach</a>
+                    <a href="index.html#capabilities" data-i18n="nav_impact" class="hover:text-gray-900 transition">Our
+                        Impact</a>
+                    <a href="index.html#security" data-i18n="nav_security"
+                        class="hover:text-gray-900 transition">Security</a>
+
+                    <button id="lang-switch-desktop"
+                        class="flex items-center gap-1.5 text-sm font-semibold text-gray-600 hover:text-[#4a4e69] transition ml-2 px-3 py-1.5 rounded-md hover:bg-gray-50 border border-transparent hover:border-gray-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                        </svg> Back to Home</a>
+                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                        <span id="current-lang-desktop">DE</span>
+                    </button>
+
+                    <a href="index.html#contact" data-i18n="nav_cta"
+                        class="btn-primary px-6 py-3 rounded-full font-semibold transition ml-2">Contact</a>
                 </div>
+
+                <div class="lg:hidden flex items-center gap-3">
+                    <button id="lang-switch-mobile"
+                        class="flex items-center gap-1 text-xs font-bold text-gray-700 bg-gray-100 px-2 py-1 rounded">
+                        DE
+                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-900 focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden absolute w-full bg-white border-b border-gray-100 shadow-xl z-40">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+                <a href="index.html#industries" data-i18n="nav_sectors"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Sectors
+                    We Serve</a>
+                <a href="index.html#unlock-india" data-i18n="nav_approach"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our
+                    Approach</a>
+                <a href="index.html#capabilities" data-i18n="nav_impact"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our
+                    Impact</a>
+                <a href="index.html#security" data-i18n="nav_security"
+                    class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Security</a>
+                <a href="index.html#contact" data-i18n="nav_cta"
+                    class="block px-3 py-3 mt-4 text-center btn-primary rounded-full font-semibold">Contact</a>
             </div>
         </div>
     </nav>
 
     <section class="py-20">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-white p-12 rounded-3xl border border-gray-100 shadow-sm">
-            <h1 class="text-4xl font-bold text-gray-900 mb-8">Terms & Conditions</h1>
-            <p class="text-sm text-gray-500 mb-8">Last Updated: March 2026</p>
+        <div
+            class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white p-8 md:p-16 rounded-3xl border border-gray-100 shadow-sm">
+            <h1 data-i18n="term_title" class="text-4xl font-bold text-gray-900 mb-4">Terms & Conditions</h1>
+            <p data-i18n="term_date" class="text-sm text-gray-500 mb-12 uppercase tracking-wide font-semibold">Last
+                Updated: March 2026</p>
 
-            <div class="space-y-8 text-gray-600 leading-relaxed">
+            <div class="space-y-10 text-gray-600 leading-relaxed text-lg">
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">1. Service Agreement</h3>
-                    <p>By engaging Astratech Solutions, you agree to our standard operating procedures for international
-                        procurement. Feasibility studies are provided at zero cost; however, final manufacturing
-                        contracts will be governed by specific, separate agreements.</p>
+                    <h3 data-i18n="term_h1" class="text-2xl font-bold text-gray-900 mb-4">1. Scope of Services</h3>
+                    <p data-i18n="term_p1">Astratech Solutions operates as a sourcing facilitator, quality assurance
+                        auditor, and Exporter of Record within India. By submitting a Request for Quotation (RFQ) or
+                        engaging our services, you agree that Astratech Solutions acts as an intermediary coordinating
+                        with Tier-1 and SME manufacturers, and managing local logistics.</p>
                 </div>
+
+                <hr class="border-gray-100">
+
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">2. Exporter of Record Limitations</h3>
-                    <p>While Astratech acts as your Exporter of Record from India, the client remains responsible for
-                        all final import duties, local taxes, and destination port clearance fees unless a DDP
-                        (Delivered Duty Paid) contract is explicitly signed.</p>
+                    <h3 data-i18n="term_h2" class="text-2xl font-bold text-gray-900 mb-4">2. Intellectual Property (IP)
+                        Protection</h3>
+                    <p data-i18n="term_p2">The client retains all legal rights, titles, and ownership over any
+                        schematics, CAD files, or technical designs shared with Astratech Solutions. No IP will be
+                        distributed to manufacturing partners without the explicit execution of a Non-Disclosure
+                        Agreement (NDA).</p>
                 </div>
+
+                <hr class="border-gray-100">
+
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">3. Governing Law</h3>
-                    <p>These terms and any disputes arising from them shall be governed by international trade laws and
-                        the local jurisdiction corresponding to our corporate registration in India.</p>
+                    <h3 data-i18n="term_h3" class="text-2xl font-bold text-gray-900 mb-4">3. Commodity-Specific
+                        Compliance</h3>
+                    <p data-i18n="term_p3">Astratech manages local compliance verifications tailored to the client's
+                        industry sector. However, final import compliance rests with the client. Our protocols include:
+                    </p>
+                    <ul class="list-disc pl-6 mt-4 space-y-2">
+                        <li data-i18n="term_l3_1"><strong>Automotive & Hardware:</strong> Verification of TS16949
+                            standards and metallurgical lab testing.</li>
+                        <li data-i18n="term_l3_2"><strong>Electronics:</strong> Enforcement of RoHS and CE compliance
+                            standards.</li>
+                        <li data-i18n="term_l3_3"><strong>Agriculture:</strong> Verification of APEDA registration,
+                            cold-chain documentation, and Phytosanitary certificates.</li>
+                    </ul>
+                </div>
+
+                <hr class="border-gray-100">
+
+                <div>
+                    <h3 data-i18n="term_h4" class="text-2xl font-bold text-gray-900 mb-4">4. Quality Assurance and
+                        Liability</h3>
+                    <p data-i18n="term_p4">Astratech Solutions conducts Pre-Shipment Inspections (PSI) utilizing
+                        standardized Acceptable Quality Limit (AQL) methodologies. Once goods pass PSI and are loaded
+                        onto export vessels, Astratech’s liability for physical product damage or defects transfers to
+                        the freight carrier or is governed by the specific Incoterms (e.g., FOB, CIF) agreed upon in the
+                        final contract.</p>
+                </div>
+
+                <hr class="border-gray-100">
+
+                <div>
+                    <h3 data-i18n="term_h5" class="text-2xl font-bold text-gray-900 mb-4">5. Escrow and Payments</h3>
+                    <p data-i18n="term_p5">To shield clients from local fraud, Astratech Solutions acts as the financial
+                        buffer. All payments are remitted to our secure corporate entity. We absorb currency
+                        fluctuations as agreed in the final Pro Forma Invoice and manage factory advances directly. Down
+                        payments are non-refundable once tooling or mass production has commenced.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#111827] py-16 text-white border-t border-[#22223b]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-gray-500">
-            <p>© 2026 Astratech Solutions. All rights reserved.</p>
+    <footer class="bg-[#111827] py-12 md:py-16 text-white border-t border-[#22223b]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 text-center sm:text-left">
+                <div class="sm:col-span-2 md:col-span-1">
+                    <div class="text-2xl font-bold tracking-tight mb-4 text-white">Astratech Solutions<span
+                            style="color: var(--color-accent-subtle)">.</span></div>
+                    <p data-i18n="footer_desc" class="text-gray-400 text-sm mb-6 max-w-xs mx-auto sm:mx-0">Your
+                        Strategic Procurement Partner in India. Global Supply Chain Expertise.</p>
+                </div>
+                <div>
+                    <h5 data-i18n="foot_nav" class="font-semibold mb-4 text-[#c9ada7]">Navigation</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="index.html#industries" data-i18n="nav_sectors"
+                                class="hover:text-white transition">Sectors We Serve</a></li>
+                        <li><a href="index.html#unlock-india" data-i18n="nav_approach"
+                                class="hover:text-white transition">Our Approach</a></li>
+                        <li><a href="index.html#capabilities" data-i18n="nav_impact"
+                                class="hover:text-white transition">Our Impact</a></li>
+                        <li><a href="index.html#security" data-i18n="nav_security"
+                                class="hover:text-white transition">Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 data-i18n="foot_legal" class="font-semibold mb-4 text-[#c9ada7]">Legal</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="privacy.html" data-i18n="foot_priv" class="hover:text-white transition">Privacy
+                                Policy</a></li>
+                        <li><a href="terms.html" data-i18n="foot_terms" class="hover:text-white transition">Terms &
+                                Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 data-i18n="foot_comp" class="font-semibold mb-4 text-[#c9ada7]">Compliance</h5>
+                    <ul class="space-y-3 text-sm text-gray-400 flex flex-col items-center sm:items-start">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg> <span data-i18n="foot_gdpr">GDPR Ready</span></li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                </path>
+                            </svg> <span data-i18n="foot_ip">IP Safe</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-[#22223b] mt-10 md:mt-12 pt-8 text-center text-xs text-gray-500">
+                <p data-i18n="foot_rights">© 2026 Astratech Solutions. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

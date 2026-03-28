@@ -116,11 +116,6 @@ p {
 /* Frosted Light Gradient Cards */
 .frosted-gradient-card {
     background: linear-gradient(90deg, #EBF4F580, #B5C6E080);
-    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.frosted-gradient-card:hover {
-    transform: scale(1.02);
 }
 
 /* Continuous Scrolling Marquee */
