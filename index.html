@@ -143,7 +143,7 @@
                 </h2>
             </div>
 
-            <div class="flex overflow-x-auto no-scrollbar border-b border-gray-200 mb-8 md:mb-12 justify-start md:justify-center gap-6 md:gap-8 px-2 pb-1"
+            <div class="flex flex-wrap md:flex-nowrap justify-center border-b border-transparent md:border-gray-200 mb-8 md:mb-12 gap-x-4 gap-y-4 md:gap-8 px-2 pb-1"
                 data-aos="fade-up" data-aos-delay="100">
                 <button onclick="switchTab('auto')" id="tab-auto" data-i18n="tab_auto"
                     class="tab-btn tab-active flex-shrink-0">Automotive</button>
@@ -253,6 +253,37 @@
                             src="images/pack-sector.jpg" alt="Packaging" class="object-cover w-full h-full"></div>
                 </div>
 
+                <div id="content-hardware" class="hidden grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+                    <div class="order-2 md:order-1">
+                        <h3 data-i18n="hard_title" class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-900">
+                            Industrial Hardware & Tooling</h3>
+                        <p data-i18n="hard_desc"
+                            class="text-gray-600 mb-6 md:mb-8 text-base md:text-lg leading-relaxed">Access metallurgical
+                            quality. Astratech Solutions sources heavy machinery and precision tools directly from
+                            specialized Indian foundries.</p>
+                        <ul class="space-y-3 md:space-y-4 mb-8 md:mb-10 text-gray-700 font-medium text-sm md:text-base">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-[#4a4e69] mr-3 md:mr-4 flex-shrink-0"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg> <span data-i18n="hard_b1">Lab-certified metallurgical tests</span></li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-[#4a4e69] mr-3 md:mr-4 flex-shrink-0"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg> <span data-i18n="hard_b2">Advanced surface treatments</span></li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-[#4a4e69] mr-3 md:mr-4 flex-shrink-0"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg> <span data-i18n="hard_b3">Direct SME foundry access</span></li>
+                        </ul>
+                        <a href="#contact" data-i18n="btn_quote" class="btn-outline">Get Quote</a>
+                    </div>
+                    <div class="order-1 md:order-2 rounded-2xl overflow-hidden aspect-w-4 aspect-h-3 w-full"><img
+                            src="images/hard-sector.jpg" alt="Hardware" class="object-cover w-full h-full"></div>
+                </div>
+
                 <div id="content-agri" class="hidden grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                     <div class="order-2 md:order-1">
                         <h3 data-i18n="agri_title" class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-900">
@@ -284,36 +315,6 @@
                             src="images/agri-sector.jpg" alt="Agriculture" class="object-cover w-full h-full"></div>
                 </div>
 
-                <div id="content-hardware" class="hidden grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-                    <div class="order-2 md:order-1">
-                        <h3 data-i18n="hard_title" class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-900">
-                            Industrial Hardware & Tooling</h3>
-                        <p data-i18n="hard_desc"
-                            class="text-gray-600 mb-6 md:mb-8 text-base md:text-lg leading-relaxed">Access metallurgical
-                            quality. Astratech Solutions sources heavy machinery and precision tools directly from
-                            specialized Indian foundries.</p>
-                        <ul class="space-y-3 md:space-y-4 mb-8 md:mb-10 text-gray-700 font-medium text-sm md:text-base">
-                            <li class="flex items-center"><svg class="w-5 h-5 text-[#4a4e69] mr-3 md:mr-4 flex-shrink-0"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg> <span data-i18n="hard_b1">Lab-certified metallurgical tests</span></li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-[#4a4e69] mr-3 md:mr-4 flex-shrink-0"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg> <span data-i18n="hard_b2">Advanced surface treatments</span></li>
-                            <li class="flex items-center"><svg class="w-5 h-5 text-[#4a4e69] mr-3 md:mr-4 flex-shrink-0"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 13l4 4L19 7"></path>
-                                </svg> <span data-i18n="hard_b3">Direct SME foundry access</span></li>
-                        </ul>
-                        <a href="#contact" data-i18n="btn_quote" class="btn-outline">Get Quote</a>
-                    </div>
-                    <div class="order-1 md:order-2 rounded-2xl overflow-hidden aspect-w-4 aspect-h-3 w-full"><img
-                            src="images/hard-sector.jpg" alt="Hardware" class="object-cover w-full h-full"></div>
-                </div>
             </div>
         </div>
     </section>
@@ -335,8 +336,8 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                <div class="bg-[#f9f9fa] p-8 md:p-10 rounded-2xl md:rounded-3xl" data-aos="fade-up"
-                    data-aos-delay="100">
+                <div class="bg-[#f9f9fa] p-8 md:p-10 rounded-2xl md:rounded-3xl transition-transform duration-300 hover:scale-[1.02] hover:shadow-md"
+                    data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center gap-3 mb-6 md:mb-8">
                         <div class="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center">
                             <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -384,8 +385,8 @@
                     </ul>
                 </div>
 
-                <div class="frosted-gradient-card p-8 md:p-10 rounded-2xl md:rounded-3xl shadow-sm" data-aos="fade-up"
-                    data-aos-delay="200">
+                <div class="frosted-gradient-card p-8 md:p-10 rounded-2xl md:rounded-3xl shadow-sm transition-transform duration-300 hover:scale-[1.02] hover:shadow-md"
+                    data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-center gap-3 mb-6 md:mb-8">
                         <div class="w-10 h-10 rounded-full bg-[#4a4e69]/10 flex items-center justify-center">
                             <svg class="w-5 h-5 text-[#4a4e69]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
